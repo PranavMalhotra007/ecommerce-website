@@ -30,6 +30,117 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
         </section>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home / T-shirt</h6>
+                <h4>Men's Fashion T-shirt</h4>
+                <h2>Rs. 1399</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>This premium cotton T-shirt offers unmatched comfort and breathability, crafted 
+                    from 100% soft, high-quality cotton. Featuring a classic crew neck and short 
+                    sleeves, it delivers a relaxed yet stylish fit suitable for everyday wear. The 
+                    fabric is lightweight, durable, and machine washable, ensuring easy maintenance. 
+                    Available in multiple colors and sizes, this versatile tee is perfect for layering 
+                    or wearing solo in any season. Ideal for casual and semi-casual occasions.</span>
+            </div>
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Smmer Collectionu Arrivals</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/products/n5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n8.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
         <section id="newsletter" class="section-p1" class="section-m1">
             <div class="newstext">
                 <h4>Sign Up for Newsletters</h4>
@@ -89,8 +200,22 @@
                 <p>© 2024, Pranav etc - HTML CSS Ecommerce Website</p>
             </div>
         </footer>
-        
-        <script src="script.js"></script>
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }    
+        </script>
     </body>
 
 </html>
